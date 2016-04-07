@@ -10,7 +10,7 @@ fi
 
 setup_zshrc() {
   if hash curl 2>/dev/null; then
-    curl -O ~/.zshrc https://raw.githubusercontent.com/ataibi/TermConfig/master/zshrc
+    curl -o ~/.zshrc https://raw.githubusercontent.com/ataibi/TermConfig/master/zshrc
   else
     wget https://raw.githubusercontent.com/ataibi/TermConfig/master/zshrc -O ~/.zshrc
   fi
