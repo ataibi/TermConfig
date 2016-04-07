@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
 
-install_ohmy() {
-if hash curl 2>/dev/null; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-else
-  sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-fi
-}
-
 setup_zshrc() {
   if hash curl 2>/dev/null; then
     curl -o ~/.zshrc https://raw.githubusercontent.com/ataibi/TermConfig/master/zshrc
@@ -16,5 +8,12 @@ setup_zshrc() {
   fi
 }
 
+install_ohmy() {
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.zshrc ~/.zshrc.orig
+chsh -s /bin/zsh
+setup_zshrc
+zsh
+}
+
 install_ohmy;
-setup_zshrc;
