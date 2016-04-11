@@ -85,3 +85,4 @@ source $ZSH/oh-my-zsh.sh
 
 alias nedit="vim ~/.zshrc"
 alias rl="source ~/.zshrc"
+alias cl="clear && ls"
