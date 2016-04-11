@@ -10,4 +10,6 @@ Scripts to get my default zsh environment faster
 ## Todo :
   - Add my own theme
   - Add aliases to zshrc file
+  - Add uninstallation script
+  - Add update script
   - Think about other things to do.
