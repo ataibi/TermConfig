@@ -26,4 +26,5 @@ install_subl
 zsh
 }
 
+sudo apt-get install zsh
 install_ohmy
